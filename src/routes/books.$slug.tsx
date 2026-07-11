@@ -49,7 +49,7 @@ export const Route = createFileRoute("/books/$slug")({
 });
 
 function BookDetail() {
-  const book = Route.useLoaderData();
+  const book = Route.useLoaderData() as (typeof BOOKS)[number];
   const related = BOOKS.filter((b) => b.slug !== book.slug);
 
   return (
