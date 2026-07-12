@@ -43,14 +43,15 @@ export function Header({ onLogoClick }: { onLogoClick: () => void }) {
           >
             AK
           </span>
-          <span className="hidden sm:flex flex-col leading-tight">
-            <span className="text-display text-lg text-forest-deep">
+          <span className="hidden sm:flex flex-col leading-tight text-left">
+            <span className="text-display text-lg text-forest-deep dark:text-cream">
               Antony Wainaina Kagucia
             </span>
             <span className="eyebrow text-[0.6rem] tracking-[0.32em] opacity-70">
               Author · Veterinary Surgeon
             </span>
           </span>
+
         </button>
 
         <nav className="hidden md:flex items-center gap-8">
