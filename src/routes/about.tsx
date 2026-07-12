@@ -82,9 +82,9 @@ function AboutPage() {
             <p className="mt-4 text-cream/70">Veterinary practice, research, and the writing life.</p>
           </div>
 
-          <ol className="relative mt-16 border-l border-gold/40 ml-4 md:ml-0 md:mx-auto md:max-w-3xl md:pl-12">
+          <ol className="relative mt-16 border-l border-gold/40 ml-4 md:mx-auto md:max-w-3xl">
             {milestones.map((m, i) => (
-              <li key={i} className="pl-8 md:pl-0 pb-12 relative">
+              <li key={i} className="pl-10 md:pl-14 pb-12 relative">
                 <span aria-hidden className="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full bg-gold ring-4 ring-forest-deep" />
                 <div className="eyebrow text-gold-soft">{m.year}</div>
                 <h3 className="text-display text-2xl mt-1 text-cream">{m.label}</h3>
