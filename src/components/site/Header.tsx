@@ -60,8 +60,8 @@ export function Header({ onLogoClick }: { onLogoClick: () => void }) {
               key={item.to}
               to={item.to}
               activeOptions={{ exact: item.to === "/" }}
-              className="relative text-sm tracking-wide text-forest-deep/85 hover:text-forest-deep transition-colors"
-              activeProps={{ className: "text-forest-deep font-medium" }}
+              className="relative text-sm tracking-wide text-forest-deep/85 hover:text-forest-deep transition-colors dark:text-cream/80 dark:hover:text-cream"
+              activeProps={{ className: "font-medium" }}
             >
               {item.label}
               <span className="absolute -bottom-2 left-0 h-px w-0 bg-gold transition-all duration-300 group-hover:w-full" />
@@ -69,33 +69,37 @@ export function Header({ onLogoClick }: { onLogoClick: () => void }) {
           ))}
           <Link
             to="/books"
-            className="ml-2 inline-flex items-center gap-2 rounded-full border border-forest-deep/80 bg-forest-deep px-5 py-2 text-xs uppercase tracking-[0.22em] text-cream hover:bg-forest transition-colors"
+            className="ml-2 inline-flex items-center gap-2 rounded-full border border-forest-deep/80 bg-forest-deep px-5 py-2 text-xs uppercase tracking-[0.22em] text-cream hover:bg-forest transition-colors dark:bg-gold dark:text-forest-deep dark:border-gold dark:hover:bg-gold-soft"
           >
             The Books
           </Link>
+          <ThemeToggle />
         </nav>
 
-        <button
-          className="md:hidden text-forest-deep p-2"
-          onClick={() => setOpen((v) => !v)}
-          aria-label="Toggle menu"
-          aria-expanded={open}
-        >
-          <span className="block w-6 h-px bg-current mb-1.5" />
-          <span className="block w-6 h-px bg-current mb-1.5" />
-          <span className="block w-4 h-px bg-current ml-auto" />
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            className="text-forest-deep dark:text-cream p-2"
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Toggle menu"
+            aria-expanded={open}
+          >
+            <span className="block w-6 h-px bg-current mb-1.5" />
+            <span className="block w-6 h-px bg-current mb-1.5" />
+            <span className="block w-4 h-px bg-current ml-auto" />
+          </button>
+        </div>
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-border bg-cream">
+        <div className="md:hidden border-t border-border bg-background">
           <nav className="container-luxe py-6 flex flex-col gap-4">
             {nav.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="text-forest-deep text-lg"
+                className="text-forest-deep dark:text-cream text-lg"
               >
                 {item.label}
               </Link>
@@ -103,6 +107,7 @@ export function Header({ onLogoClick }: { onLogoClick: () => void }) {
           </nav>
         </div>
       )}
+
     </header>
   );
 }
