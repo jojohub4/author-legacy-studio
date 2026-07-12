@@ -68,9 +68,25 @@ export function Footer() {
       </div>
 
       <div className="border-t border-cream/10">
-        <div className="container-luxe flex flex-col items-start justify-between gap-3 py-6 text-xs text-cream/50 md:flex-row md:items-center">
+        <div className="container-luxe flex flex-col items-start justify-between gap-4 py-6 text-xs text-cream/50 md:flex-row md:items-center">
           <p>© {new Date().getFullYear()} Antony Wainaina Kagucia. All rights reserved.</p>
-          <p className="tracking-[0.2em] uppercase">Built with quiet devotion.</p>
+          <div className="flex items-center gap-5">
+            <a
+              href="https://www.everand.com/author/891112592/Antony-Wainaina-Kagucia"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Everand author page"
+              className="uppercase tracking-[0.22em] hover:text-gold"
+            >
+              Everand
+            </a>
+            <span aria-hidden className="h-3 w-px bg-cream/20" />
+            <Link to="/contact" className="uppercase tracking-[0.22em] hover:text-gold">
+              Contact
+            </Link>
+            <span aria-hidden className="h-3 w-px bg-cream/20" />
+            <p className="tracking-[0.2em] uppercase">Built with quiet devotion.</p>
+          </div>
         </div>
       </div>
     </footer>

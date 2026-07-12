@@ -95,7 +95,39 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="container-luxe py-24 text-center">
+      {/* WHY I WRITE */}
+      <section className="container-luxe py-24 md:py-28">
+        <div className="grid gap-14 lg:grid-cols-12 items-start">
+          <div className="lg:col-span-4">
+            <span className="eyebrow">Philosophy</span>
+            <h2 className="text-display text-4xl md:text-5xl mt-3 text-forest-deep leading-tight">
+              Why I Write
+            </h2>
+            <span aria-hidden className="gold-rule mt-6 block" />
+          </div>
+          <div className="lg:col-span-8 space-y-5 text-lg leading-relaxed text-ink/80">
+            <p>
+              I write to hold up a mirror to the quiet moral choices that shape
+              a life — choices made in kitchens, boardrooms, chapels, and the
+              hush of a waiting room. Stories are how a community remembers
+              what matters when the noise fades.
+            </p>
+            <p>
+              My work is rooted in Kenya but reaches for the universal: the
+              weight of inheritance, the pull of faith, the fragility of
+              integrity when wealth or fear enters a room. I write for readers
+              who want to feel seen, and for readers who want to be gently
+              challenged.
+            </p>
+            <p className="text-muted-foreground italic text-base">
+              An editable placeholder — the author is welcome to expand this
+              section with a personal writing statement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="container-luxe pb-24 text-center">
         <span className="gold-rule mx-auto block" />
         <p className="mt-8 text-display italic text-3xl md:text-4xl text-forest-deep max-w-3xl mx-auto leading-tight">
           "To care for animals is to listen to what cannot be spoken.

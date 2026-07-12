@@ -1,7 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { BOOKS, featuredBook } from "@/lib/books";
+import { BOOKS, bookCount, featuredBook } from "@/lib/books";
 import portrait from "@/assets/author-portrait.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
+
+const numberWords = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+const asWord = (n: number) => numberWords[n] ?? String(n);
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -76,7 +80,7 @@ function HomePage() {
               />
               <div className="absolute -bottom-6 -left-6 rounded-sm bg-cream px-5 py-3 shadow-lift">
                 <div className="eyebrow text-forest">Est. 2025</div>
-                <div className="text-display text-forest-deep">Three Books · One Voice</div>
+                <div className="text-display text-forest-deep">{asWord(bookCount())} Books · One Voice</div>
               </div>
             </div>
           </div>
