@@ -26,11 +26,12 @@ export function Header({ onLogoClick }: { onLogoClick: () => void }) {
     <header
       className={`fixed top-0 z-50 w-full transition-all duration-500 ${
         scrolled
-          ? "backdrop-blur-md bg-[color-mix(in_oklab,var(--cream)_88%,transparent)] border-b border-border/60"
+          ? "backdrop-blur-md bg-[color-mix(in_oklab,var(--background)_88%,transparent)] border-b border-border/60"
           : "bg-transparent"
       }`}
     >
       <div className="container-luxe flex h-20 items-center justify-between">
+
         <button
           onClick={onLogoClick}
           aria-label="Antony Wainaina Kagucia — home"
