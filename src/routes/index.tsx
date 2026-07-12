@@ -80,7 +80,7 @@ function HomePage() {
               />
               <div className="absolute -bottom-6 -left-6 rounded-sm bg-cream px-5 py-3 shadow-lift">
                 <div className="eyebrow text-forest">Est. 2025</div>
-                <div className="text-display text-forest-deep">Three Books · One Voice</div>
+                <div className="text-display text-forest-deep">{asWord(bookCount())} Books · One Voice</div>
               </div>
             </div>
           </div>
