@@ -1,7 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { BOOKS, featuredBook } from "@/lib/books";
+import { BOOKS, bookCount, featuredBook } from "@/lib/books";
 import portrait from "@/assets/author-portrait.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
+
+const numberWords = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+const asWord = (n: number) => numberWords[n] ?? String(n);
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
