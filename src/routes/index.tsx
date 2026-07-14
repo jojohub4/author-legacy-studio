@@ -191,7 +191,7 @@ function HomePage() {
       {/* PULLQUOTE */}
       <section className="container-luxe py-24 md:py-32 text-center">
         <span className="gold-rule mx-auto block" />
-        <blockquote className="mt-8 text-display text-3xl md:text-5xl text-forest-deep leading-tight max-w-4xl mx-auto">
+        <blockquote className="mt-8 text-display text-3xl md:text-5xl text-foreground leading-tight max-w-4xl mx-auto">
           "Loyalty and betrayal walk hand in hand, and truth has a price
           only the brave are willing to pay."
         </blockquote>
