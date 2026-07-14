@@ -21,15 +21,15 @@ function ContactPage() {
       <div className="grid gap-16 lg:grid-cols-2">
         <div>
           <span className="eyebrow">Get in Touch</span>
-          <h1 className="text-display text-5xl md:text-6xl mt-4 text-forest-deep">
+          <h1 className="text-display text-5xl md:text-6xl mt-4 text-foreground">
             Write to the author.
           </h1>
-          <p className="mt-5 text-ink/70 text-lg max-w-md">
+          <p className="mt-5 text-foreground/70 text-lg max-w-md">
             For reader letters, interviews, speaking engagements, or media
             enquiries — leave a note. Every message is read.
           </p>
 
-          <div className="mt-12 space-y-4 text-sm text-ink/70">
+          <div className="mt-12 space-y-4 text-sm text-foreground/70">
             <div>
               <div className="eyebrow">Location</div>
               <p className="mt-1">Kiambu County, Kenya</p>
@@ -37,7 +37,7 @@ function ContactPage() {
             <div>
               <div className="eyebrow">Read Elsewhere</div>
               <p className="mt-1">
-                <a href="https://www.everand.com/author/891112592/Antony-Wainaina-Kagucia" target="_blank" rel="noreferrer" className="underline underline-offset-4 decoration-gold hover:text-forest">
+                <a href="https://www.everand.com/author/891112592/Antony-Wainaina-Kagucia" target="_blank" rel="noreferrer" className="underline underline-offset-4 decoration-gold hover:text-foreground/70">
                   Everand author page
                 </a>
               </p>
@@ -53,8 +53,8 @@ function ContactPage() {
           {sent ? (
             <div className="py-16 text-center">
               <div className="eyebrow text-gold">Message received</div>
-              <h2 className="text-display text-3xl mt-3 text-forest-deep">Thank you.</h2>
-              <p className="mt-4 text-ink/70">Your note will be read personally.</p>
+              <h2 className="text-display text-3xl mt-3 text-foreground">Thank you.</h2>
+              <p className="mt-4 text-foreground/70">Your note will be read personally.</p>
             </div>
           ) : (
             <>

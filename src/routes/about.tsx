@@ -37,12 +37,12 @@ function AboutPage() {
           </div>
           <div className="lg:col-span-7">
             <span className="eyebrow">About the Author</span>
-            <h1 className="text-display text-5xl md:text-6xl mt-4 text-forest-deep">
+            <h1 className="text-display text-5xl md:text-6xl mt-4 text-foreground">
               A veterinarian who writes at lamplight.
             </h1>
-            <div className="mt-8 space-y-5 text-lg leading-relaxed text-ink/80">
+            <div className="mt-8 space-y-5 text-lg leading-relaxed text-foreground/80">
               <p>
-                <span className="font-medium text-forest-deep">Antony Wainaina Kagucia</span> is a
+                <span className="font-medium text-foreground">Antony Wainaina Kagucia</span> is a
                 Kenyan author, veterinary surgeon, and storyteller. He is employed by the
                 Government of Kenya, serving with the Ministry of Agriculture, Livestock
                 and Fisheries in the County Government of Kiambu.
@@ -100,12 +100,12 @@ function AboutPage() {
         <div className="grid gap-14 lg:grid-cols-12 items-start">
           <div className="lg:col-span-4">
             <span className="eyebrow">Philosophy</span>
-            <h2 className="text-display text-4xl md:text-5xl mt-3 text-forest-deep leading-tight">
+            <h2 className="text-display text-4xl md:text-5xl mt-3 text-foreground leading-tight">
               Why I Write
             </h2>
             <span aria-hidden className="gold-rule mt-6 block" />
           </div>
-          <div className="lg:col-span-8 space-y-5 text-lg leading-relaxed text-ink/80">
+          <div className="lg:col-span-8 space-y-5 text-lg leading-relaxed text-foreground/80">
             <p>
               I write to hold up a mirror to the quiet moral choices that shape
               a life — choices made in kitchens, boardrooms, chapels, and the
@@ -129,7 +129,7 @@ function AboutPage() {
 
       <section className="container-luxe pb-24 text-center">
         <span className="gold-rule mx-auto block" />
-        <p className="mt-8 text-display italic text-3xl md:text-4xl text-forest-deep max-w-3xl mx-auto leading-tight">
+        <p className="mt-8 text-display italic text-3xl md:text-4xl text-foreground max-w-3xl mx-auto leading-tight">
           "To care for animals is to listen to what cannot be spoken.
           Fiction, I have found, asks the same of us."
         </p>

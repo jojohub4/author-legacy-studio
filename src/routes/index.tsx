@@ -107,13 +107,14 @@ function HomePage() {
               <span className="gold-rule" />
               <span className="eyebrow">The New Book · {featured.releaseDate}</span>
             </div>
-            <h2 className="text-display mt-6 text-4xl md:text-5xl text-forest-deep">
+            <h2 className="text-display mt-6 text-4xl md:text-5xl text-foreground">
               {featured.title}
             </h2>
             <p className="mt-4 text-muted-foreground text-sm uppercase tracking-widest">
               {featured.genre}
             </p>
-            <p className="mt-6 text-lg leading-relaxed text-ink/80 font-serif italic">
+            <p className="mt-6 text-lg leading-relaxed text-foreground/80 font-serif italic">
+
               "{featured.synopsis}"
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -131,10 +132,11 @@ function HomePage() {
               <Link
                 to="/books/$slug"
                 params={{ slug: featured.slug }}
-                className="rounded-full border border-forest-deep px-6 py-3 text-xs uppercase tracking-[0.22em] text-forest-deep hover:bg-forest-deep hover:text-cream transition-colors"
+                className="rounded-full border border-foreground/60 px-6 py-3 text-xs uppercase tracking-[0.22em] text-foreground hover:bg-foreground hover:text-background transition-colors"
               >
                 Full details
               </Link>
+
             </div>
           </div>
         </div>
@@ -189,7 +191,7 @@ function HomePage() {
       {/* PULLQUOTE */}
       <section className="container-luxe py-24 md:py-32 text-center">
         <span className="gold-rule mx-auto block" />
-        <blockquote className="mt-8 text-display text-3xl md:text-5xl text-forest-deep leading-tight max-w-4xl mx-auto">
+        <blockquote className="mt-8 text-display text-3xl md:text-5xl text-foreground leading-tight max-w-4xl mx-auto">
           "Loyalty and betrayal walk hand in hand, and truth has a price
           only the brave are willing to pay."
         </blockquote>

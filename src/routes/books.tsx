@@ -36,10 +36,10 @@ function BooksPage() {
       <section className="container-luxe pt-16 pb-8">
         <div className="max-w-3xl">
           <span className="eyebrow">The Library</span>
-          <h1 className="text-display text-5xl md:text-6xl mt-4 text-forest-deep">
+          <h1 className="text-display text-5xl md:text-6xl mt-4 text-foreground">
             The Books.
           </h1>
-          <p className="mt-5 text-lg text-ink/70 max-w-xl">
+          <p className="mt-5 text-lg text-foreground/70 max-w-xl">
             Three works. Distinct genres, one voice — attentive to legacy,
             faith, and the moral weight of ordinary choices.
           </p>
@@ -76,10 +76,10 @@ function BooksPage() {
                 </div>
                 <div className="pt-6">
                   <div className="eyebrow">{b.year} · {b.genre}</div>
-                  <h2 className="text-display text-3xl mt-2 text-forest-deep group-hover:text-forest transition-colors">
+                  <h2 className="text-display text-3xl mt-2 text-foreground group-hover:text-foreground/70 transition-colors">
                     {b.title}
                   </h2>
-                  <p className="mt-3 text-ink/70 line-clamp-4">{b.synopsis}</p>
+                  <p className="mt-3 text-foreground/70 line-clamp-4">{b.synopsis}</p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {b.themes.slice(0, 3).map((t) => (
                       <span key={t} className="text-[0.68rem] uppercase tracking-widest border border-border rounded-full px-3 py-1 text-muted-foreground">

@@ -45,7 +45,7 @@ export const Route = createFileRoute("/books/$slug")({
   component: BookDetail,
   notFoundComponent: () => (
     <div className="container-luxe py-32 text-center">
-      <h1 className="text-display text-4xl text-forest-deep">Book not found</h1>
+      <h1 className="text-display text-4xl text-foreground">Book not found</h1>
       <Link to="/books" className="mt-6 inline-block underline underline-offset-8 decoration-gold">Back to books</Link>
     </div>
   ),
@@ -84,23 +84,23 @@ function BookDetail() {
       <section className="container-luxe py-20 md:py-24">
         <div className="max-w-3xl mx-auto">
           <span className="eyebrow">The Story</span>
-          <h2 className="text-display text-4xl md:text-5xl mt-3 text-forest-deep">Synopsis</h2>
+          <h2 className="text-display text-4xl md:text-5xl mt-3 text-foreground">Synopsis</h2>
           <span aria-hidden className="gold-rule mt-6 block" />
-          <p className="mt-8 text-lg leading-relaxed text-ink/85">{book.longDescription}</p>
+          <p className="mt-8 text-lg leading-relaxed text-foreground/85">{book.longDescription}</p>
         </div>
       </section>
 
       {/* FROM THE AUTHOR */}
-      <section className="bg-cream/60 border-y border-gold/20 py-20 md:py-24">
+      <section className="bg-muted/40 border-y border-gold/20 py-20 md:py-24">
         <div className="container-luxe max-w-3xl">
           <span className="eyebrow text-center block">A Word</span>
-          <h2 className="text-display text-4xl md:text-5xl mt-3 text-forest-deep text-center">From the Author</h2>
+          <h2 className="text-display text-4xl md:text-5xl mt-3 text-foreground text-center">From the Author</h2>
           <figure className="mt-12 relative rounded-sm border border-gold/40 bg-background/70 p-10 md:p-14 shadow-lift">
             <span aria-hidden className="absolute -top-5 left-8 text-6xl text-gold font-serif leading-none">"</span>
-            <blockquote className="text-display italic text-2xl md:text-3xl text-forest-deep leading-snug">
+            <blockquote className="text-display italic text-2xl md:text-3xl text-foreground leading-snug">
               {book.authorNote}
             </blockquote>
-            <figcaption className="mt-8 eyebrow text-forest">— Antony Wainaina Kagucia</figcaption>
+            <figcaption className="mt-8 eyebrow text-foreground/70">— Antony Wainaina Kagucia</figcaption>
           </figure>
         </div>
       </section>
@@ -109,13 +109,13 @@ function BookDetail() {
       <section className="container-luxe py-20 md:py-24">
         <div className="text-center max-w-2xl mx-auto">
           <span className="eyebrow">Explored Within</span>
-          <h2 className="text-display text-4xl md:text-5xl mt-3 text-forest-deep">Book Themes</h2>
+          <h2 className="text-display text-4xl md:text-5xl mt-3 text-foreground">Book Themes</h2>
         </div>
         <div className="mt-10 flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
           {book.themes.map((t) => (
             <span
               key={t}
-              className="text-xs uppercase tracking-[0.22em] rounded-full border border-gold/50 bg-background px-5 py-2.5 text-forest-deep hover:bg-gold hover:text-forest-deep transition-colors"
+              className="text-xs uppercase tracking-[0.22em] rounded-full border border-gold/50 bg-background px-5 py-2.5 text-foreground hover:bg-gold hover:text-foreground transition-colors"
             >
               {t}
             </span>
@@ -144,7 +144,7 @@ function BookDetail() {
           {/* Book information */}
           <div className="rounded-sm border border-border bg-card p-8 md:p-10 shadow-lift">
             <span className="eyebrow">The Details</span>
-            <h3 className="text-display text-3xl mt-3 text-forest-deep">Book Information</h3>
+            <h3 className="text-display text-3xl mt-3 text-foreground">Book Information</h3>
             <dl className="mt-6 grid grid-cols-2 gap-x-6 gap-y-5 text-sm">
               <InfoRow label="Genre" value={book.genre} />
               <InfoRow label="Published" value={String(book.year)} />
@@ -197,7 +197,7 @@ function BookDetail() {
           <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
             <div>
               <span className="eyebrow">More to Read</span>
-              <h2 className="text-display text-3xl md:text-4xl mt-3 text-forest-deep">You May Also Enjoy</h2>
+              <h2 className="text-display text-3xl md:text-4xl mt-3 text-foreground">You May Also Enjoy</h2>
             </div>
             <Link to="/books" className="text-sm underline underline-offset-8 decoration-gold">All books →</Link>
           </div>
@@ -209,8 +209,8 @@ function BookDetail() {
                      className="w-32 rounded-sm shadow-lift transition-transform duration-500 group-hover:-translate-y-1" />
                 <div>
                   <div className="eyebrow">{b.year} · {b.genre.split("·")[0].trim()}</div>
-                  <h3 className="text-display text-2xl mt-1 text-forest-deep group-hover:text-forest">{b.title}</h3>
-                  <p className="mt-2 text-sm text-ink/70 line-clamp-3">{b.synopsis}</p>
+                  <h3 className="text-display text-2xl mt-1 text-foreground group-hover:text-foreground/70">{b.title}</h3>
+                  <p className="mt-2 text-sm text-foreground/70 line-clamp-3">{b.synopsis}</p>
                 </div>
               </Link>
             ))}
@@ -225,7 +225,7 @@ function InfoRow({ label, value, mono }: { label: string; value: string; mono?: 
   return (
     <div>
       <dt className="eyebrow text-muted-foreground">{label}</dt>
-      <dd className={"mt-1 text-forest-deep " + (mono ? "font-mono text-xs break-all" : "")}>{value}</dd>
+      <dd className={"mt-1 text-foreground " + (mono ? "font-mono text-xs break-all" : "")}>{value}</dd>
     </div>
   );
 }
