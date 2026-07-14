@@ -53,10 +53,10 @@ function NewsPage() {
     <section className="container-luxe py-20 md:py-28">
       <div className="max-w-3xl">
         <span className="eyebrow">News & Media</span>
-        <h1 className="text-display text-5xl md:text-6xl mt-4 text-forest-deep">
+        <h1 className="text-display text-5xl md:text-6xl mt-4 text-foreground">
           The record so far.
         </h1>
-        <p className="mt-5 text-ink/70 text-lg">
+        <p className="mt-5 text-foreground/70 text-lg">
           Public releases, publications, and mentions. Interviews and podcasts
           will be added as they are recorded.
         </p>
@@ -67,10 +67,10 @@ function NewsPage() {
           <li key={i} className="relative">
             <span aria-hidden className="absolute -left-[41px] md:-left-[57px] top-2 h-3 w-3 rounded-full bg-gold ring-4 ring-cream" />
             <div className="eyebrow">{it.date} · {it.kind}</div>
-            <h2 className="text-display text-2xl md:text-3xl mt-2 text-forest-deep">{it.title}</h2>
-            <p className="mt-3 text-ink/75 leading-relaxed max-w-3xl">{it.body}</p>
+            <h2 className="text-display text-2xl md:text-3xl mt-2 text-foreground">{it.title}</h2>
+            <p className="mt-3 text-foreground/75 leading-relaxed max-w-3xl">{it.body}</p>
             <a href={it.url} target="_blank" rel="noreferrer"
-               className="mt-4 inline-block text-sm underline underline-offset-4 decoration-gold hover:text-forest">
+               className="mt-4 inline-block text-sm underline underline-offset-4 decoration-gold hover:text-foreground/70">
               {it.urlLabel} →
             </a>
           </li>
