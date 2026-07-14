@@ -107,13 +107,14 @@ function HomePage() {
               <span className="gold-rule" />
               <span className="eyebrow">The New Book · {featured.releaseDate}</span>
             </div>
-            <h2 className="text-display mt-6 text-4xl md:text-5xl text-forest-deep">
+            <h2 className="text-display mt-6 text-4xl md:text-5xl text-foreground">
               {featured.title}
             </h2>
             <p className="mt-4 text-muted-foreground text-sm uppercase tracking-widest">
               {featured.genre}
             </p>
-            <p className="mt-6 text-lg leading-relaxed text-ink/80 font-serif italic">
+            <p className="mt-6 text-lg leading-relaxed text-foreground/80 font-serif italic">
+
               "{featured.synopsis}"
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
