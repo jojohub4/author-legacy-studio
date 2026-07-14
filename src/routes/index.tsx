@@ -132,10 +132,11 @@ function HomePage() {
               <Link
                 to="/books/$slug"
                 params={{ slug: featured.slug }}
-                className="rounded-full border border-forest-deep px-6 py-3 text-xs uppercase tracking-[0.22em] text-forest-deep hover:bg-forest-deep hover:text-cream transition-colors"
+                className="rounded-full border border-foreground/60 px-6 py-3 text-xs uppercase tracking-[0.22em] text-foreground hover:bg-foreground hover:text-background transition-colors"
               >
                 Full details
               </Link>
+
             </div>
           </div>
         </div>
